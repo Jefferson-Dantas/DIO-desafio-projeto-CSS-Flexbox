@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-corpo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-celular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-celular img {
+    height: 50rem;
+}
+
+.conteudo-complemento {
+    display: flex;
+    align-items: center; /* Passou para horizontal */
+    justify-content: space-around; /* Passou para vertical */
+    flex-direction: column; /* Muda agora o eixo do align-items e do justify-content */
+    width: 50%;
+    min-height: 34rem;
+}
+
+.container1e2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.container1e2:nth-child(1) {
+    min-height: 19rem;
+}
+
+/* nth-child() é um seletor que lida com os filhos de um elemento seguindo uma sequência selecionada. Na classe acima está sendo aplicado ao primeiro. */
+
+.logo-instagram {
+    height: 3rem;
+}
+
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto-perfil img {
+    width: 7rem;
+}
+
+.login{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.naoevoce {
+    color: rgb(160, 160, 160)
+}
+
+.link-azul {
+    color: #0095f6;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.botoes {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.download {
+    height: 3rem;
+    width: 10remx;
+    background-size: cover;
+}
+
+.download img {
+    height: 3rem;
+    width: 10remx;
+    background-size: cover;
+}
+
+.download:nth-child(1) {
+    background-image: url('./img/apple-button.png')
+}
+
+.download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+/* Media queries */
+
+@media(max-width: 1024px) {
+    .instagram-corpo{
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px) {
+
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-corpo {
+        width: 90%;
+    }
+
+    .instagram-celular {
+        display: none;
+    }
+
+    .conteudo-complemento {
+        width: 100%;
+    }
+
+    .container1e2 {
+        border: 1px solid transparent;
+    }
+}
